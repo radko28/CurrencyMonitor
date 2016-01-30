@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+    xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+    <http auto-config="true">
+		<intercept-url pattern="/users/*" access="ROLE_USER" />
+		<intercept-url pattern="/admin/*" access="ROLE_ADMIN" />
+		<form-login login-page="/login" default-target-url="/welcome"
+			authentication-failure-url="/loginfailed" />
+		<logout logout-success-url="/logout" />
+	</http>
+    
+  <authentication-manager alias="authenticationManager">
+    <authentication-provider user-service-ref="userServiceDB" >
+    </authentication-provider>
+  </authentication-manager> 
+    
+  <jdbc-user-service id =  "userServiceDB" data-source-ref="dataSource"
+				
+				users-by-username-query="
+					select username,password, enabled 
+					from users where USERNAME=?" 
+				
+				authorities-by-username-query="
+					select u.username, auth.authority from users u, AUTHORITIES auth 
+					where u.username = auth.username and u.username =?  " 
+					
+			/>
+
+  <beans:bean class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler"/>
+
+</beans:beans>                        
+

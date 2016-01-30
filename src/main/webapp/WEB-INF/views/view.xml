@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="homeView" template="/WEB-INF/views/view.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/views/currentExchangeRate.jsp" />
+    <put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+  </definition>
+  
+  <definition name="loginView" template="/WEB-INF/views/view.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/views/currentExchangeRate.jsp" />
+    <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+  </definition>
+  <definition name="userAddView" template="/WEB-INF/views/view.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/views/currentExchangeRate.jsp" />
+    <put-attribute name="body" value="/WEB-INF/views/register.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+  </definition>
+  
+ 
+</tiles-definitions>
