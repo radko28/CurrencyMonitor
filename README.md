@@ -8,7 +8,7 @@
 
 <b>Deploy application</b>
 <br>Copy file from ./target/CurrencyMonitor-1.0.war to deployment directory of web or application server.
-<br>I've tested in Tomcat7 and JBoss7.1.
+<br>I've tested on Tomcat7 and JBoss7.1.
 <br>Deployment directory for Tomcat is Tomcat/webapps
 <br>Deployment directory for JBoss is JBoss/standalone/deployments
 
