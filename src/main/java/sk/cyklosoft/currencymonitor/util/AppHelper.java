@@ -1,5 +1,8 @@
 package sk.cyklosoft.currencymonitor.util;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -28,7 +31,7 @@ public class AppHelper {
     private static String[] adminRoles = { RoleType.ROLE_ADMIN.toString() };
     /** User birthday date format */
     public static String DATE_FORMAT = "dd.MM.yyyy";
-    public static String DATE_REST_FORMAT = "yyyy-mm-dd";
+    public static String DATE_DB_FORMAT = "dd-MM-yyyy";
     
     
     
@@ -99,6 +102,11 @@ public class AppHelper {
     public static void initUser(String username, String role) {
         AnonymousAuthenticationToken auth = new AnonymousAuthenticationToken(username, username, AuthorityUtils.createAuthorityList(role));
         SecurityContextHolder.getContext().setAuthentication(auth);
+    }
+    
+    public static String liveExaxhangeDate() {
+    	SimpleDateFormat sdf = new SimpleDateFormat(AppHelper.DATE_DB_FORMAT);
+    	return sdf.format(new Date());
     }
 }
 

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title><tiles:insertAttribute name="title" ignore="true" />TrangoWorld Boulder</title>
+<title><tiles:insertAttribute name="title" ignore="true" />Currency monitor</title>
  	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/styles/mainstyle.css"/>" />
  	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/styles/calendar-win2k-1.css"/>" />
 	<script type="text/javascript" src="<c:url value="/resources/js/calendar.js"/>"></script>

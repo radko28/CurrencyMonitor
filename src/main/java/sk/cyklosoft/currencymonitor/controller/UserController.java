@@ -55,7 +55,7 @@ public class UserController {
     		model.addAttribute("historicalCurrencyList", null);
         	model.addAttribute("errorMessageHistorical", null);
         } else {
-        	CurrencyVO historicalCurrencyVO = currencyService.getHistorycalExchangeRate(historicalCurrency);
+        	CurrencyVO historicalCurrencyVO = currencyService.getHistoricalExchangeRate(historicalCurrency);
         	model.addAttribute("historicalCurrencyList", historicalCurrencyVO.getRates());
         	model.addAttribute("errorMessageHistorical", historicalCurrencyVO.getErrorMessage());
         }

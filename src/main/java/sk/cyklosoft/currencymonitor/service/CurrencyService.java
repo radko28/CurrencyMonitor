@@ -6,6 +6,6 @@ import sk.cyklosoft.currencymonitor.vo.HistoricalCurrencyVO;
 public interface CurrencyService {
 	
 	public CurrencyVO getCurrentExchangeRate();
-	public CurrencyVO getHistorycalExchangeRate(HistoricalCurrencyVO historicalCurrency);
+	public CurrencyVO getHistoricalExchangeRate(HistoricalCurrencyVO historicalCurrency);
 
 }
