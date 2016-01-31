@@ -13,5 +13,6 @@
 <br>Deployment directory for JBoss is JBoss/standalone/deployments
 
 <b>Run application</b>
-<br>In Tomcat runs script Tomcat/bin/startup
+<br>In Tomcat runs script Tomcat/bin/startup. In case of Tomcat you can it with command 
+java -jar target/dependency/webapp-runner.jar target/*.war.
 <br>In JBoss runs script JBoss/bin/standalone
