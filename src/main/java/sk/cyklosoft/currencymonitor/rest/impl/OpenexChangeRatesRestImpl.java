@@ -18,14 +18,14 @@ public class OpenexChangeRatesRestImpl implements OpenexChangeRatesRest {
 	@Override
 	public CurrencyResponseData getHistorical(String date) throws Exception {
 		restTemplate = new RestTemplate();
-		response = restTemplate.getForObject(URL_HISTORICAL + APP_ID, CurrencyResponseData.class, date);
+		//response = restTemplate.getForObject(URL_HISTORICAL + APP_ID, CurrencyResponseData.class, date);
 		return response;
 	}
 
 	@Override
 	public CurrencyResponseData getLatest() throws Exception {
 		restTemplate= new RestTemplate();
-		response = restTemplate.getForObject(URL_LATEST + APP_ID, CurrencyResponseData.class);
+		//response = restTemplate.getForObject(URL_LATEST + APP_ID, CurrencyResponseData.class);
 		return response;
 	}
 	

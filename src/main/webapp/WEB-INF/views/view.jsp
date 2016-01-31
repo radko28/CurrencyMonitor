@@ -18,7 +18,7 @@
         <td height="1" colspan="2" style="vertical-align: top;"><tiles:insertAttribute name="header" /></td>
     </tr>
     <tr>
-        <td height="600" valign = "top" style = "background-color:rgb(106,125,57);"><tiles:insertAttribute name="menu" /></td>
+        <td height="600" valign = "top" ><tiles:insertAttribute name="menu" /></td>
         <td width="80%" valign = "top"><tiles:insertAttribute name="body" /></td>
     </tr>
     <tr>

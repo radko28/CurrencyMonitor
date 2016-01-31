@@ -145,38 +145,26 @@
 		<artifactId>servlet-api</artifactId>
 		<version>3.0-alpha-1</version>
 	</dependency>
-	
 	<dependency>
-	<groupId>com.h2database</groupId>
-	<artifactId>h2</artifactId>
-	<version>1.4.191</version>
-</dependency>
-	 <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.2.1</version>
-        </dependency>
+		<groupId>com.h2database</groupId>
+		<artifactId>h2</artifactId>
+		<version>1.4.191</version>
+	</dependency>
 	<dependency>
-	<groupId>com.fasterxml.jackson.core</groupId>
-	<artifactId>jackson-annotations</artifactId>
-	<version>2.3.0</version>
-</dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-databind</artifactId>
+    	<version>2.6.0</version>
+	</dependency>
 	<dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-databind</artifactId>
-    <version>2.6.0</version>
-</dependency>
-	<dependency>
-	<groupId>com.fasterxml.jackson.core</groupId>
-	<artifactId>jackson-annotations</artifactId>
-	<version>2.7.0</version>
-</dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-annotations</artifactId>
+		<version>2.7.0</version>
+	</dependency>
 	
   	</dependencies>
   <build>
   
   <plugins>
-
    <plugin>
     <artifactId>maven-compiler-plugin</artifactId>
     <version>2.0.2</version>
@@ -185,10 +173,7 @@
      <target>1.7</target>
     </configuration>
    </plugin>
-
   </plugins>
  </build>
-  
-   
  
 </project>
